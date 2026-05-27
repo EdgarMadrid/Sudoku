@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sudoku</title>
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+  <h1>SUDOKU</h1>
+
+  <div id="container">
+    <div class="controls">
+      <button id="btn-start" disabled>Iniciar</button>
+      <button id="btn-reiniciar" style="display:none">Reiniciar</button>
+
+      <select id="level">
+        <option value="-">Dificultad</option>
+        <option value="16">Extremo</option>
+        <option value="12">Dificil</option>
+        <option value="9">Medio</option>
+        <option value="6">Facil</option>
+      </select>
+
+      <button id="btn-resolver">Resolver</button>
+      <button id="btn-limpiar">Limpiar</button>
+    </div>
+
+    <div class="info-bar">
+      <span>Tiempo: <strong id="timer">00:00</strong></span>
+      <span>Mejor: <strong id="best-time">--:--</strong></span>
+    </div>
+
+    <div id="sudoku-board"></div>
+    <div id="message"></div>
+  </div>
+
+  <script src="./src/main.js"></script>
+</body>
+</html>
